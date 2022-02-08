@@ -1,5 +1,5 @@
-import SignIn from "./auth/signin/signin";
+import SignIn from "./auth/signin";
 
-const Index = () => <SignIn />;
+const Index = () => <h1>Index</h1>;
 
 export default Index;

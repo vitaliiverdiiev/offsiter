@@ -12,6 +12,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import logo from "assets/images/logo.svg";
+import LoginForm from "components/LoginForm";
 import { FcGoogle } from "react-icons/fc";
 import { FcKey } from "react-icons/fc";
 
@@ -38,31 +39,8 @@ const SignIn = (): JSX.Element => (
       </Text>
     </Box>
     <Box w="448px" bgColor="white" borderRadius={8} py={8} px={10} mt={8}>
-      <form>
-        <FormControl>
-          <FormLabel htmlFor="email">Email address</FormLabel>
-          <Input id="email" type="email" />
-        </FormControl>
-        <FormControl mt={6}>
-          <HStack alignItems="flex-start" justifyContent="space-between">
-            <FormLabel htmlFor="password">Password</FormLabel>
-            <Link color="blue.500" fontWeight="bold">
-              Forgot Password?
-            </Link>
-          </HStack>
-          <Input id="password" type="password" />
-        </FormControl>
-        <Button
-          size="lg"
-          w="100%"
-          bgColor="blue.500"
-          color="white"
-          fontWeight="semibold"
-          mt={6}
-        >
-          Sign in
-        </Button>
-      </form>
+      {/* * FORM GOES HERE */}
+      <LoginForm />
       <Box position="relative" textAlign="center" my={8}>
         <Divider position="absolute" top="50%" />
         <Text
